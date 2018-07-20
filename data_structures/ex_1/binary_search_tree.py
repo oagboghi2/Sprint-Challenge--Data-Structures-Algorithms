@@ -5,7 +5,15 @@ class BinarySearchTree:
     self.right = None
 
   def depth_first_for_each(self, cb):
-    pass    
+    # travel to the end of the tree, and add nodes back into the array
+    arr = []
+    if(value < self.value):
+      if self.left == True
+      arr.append(self.left)
+    else:
+      
+
+      
 
   def breadth_first_for_each(self, cb):
     pass

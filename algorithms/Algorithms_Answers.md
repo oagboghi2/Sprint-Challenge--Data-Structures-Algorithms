@@ -10,6 +10,8 @@ F. 0(logN)
 
 Exercise II
 
+b. I would first create a base case of 1 story. Next I would dividie the n-sory into halves, a lower half and a upper half. I would discard the upper half, and start the eggs from the middle story
+
 Exercise III
 a. this quicksort function would be O(n). If the first element in the sorted array is the pivot point, than we would only have to deal with the greater than list
 
