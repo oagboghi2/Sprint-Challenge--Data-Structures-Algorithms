@@ -4,13 +4,16 @@ class BinarySearchTree:
     self.left = None
     self.right = None
 
-  def depth_first_for_each(self, cb):
+    def depth_first_for_each(self, cb):
     # travel to the end of the tree, and add nodes back into the array
     arr = []
     if(value < self.value):
-      if self.left == True
-      arr.append(self.left)
-    else:
+      #if self.left == True
+      #your cb should continue calling itself until it hits the end of the branch
+      self.left.depth_first_for_search(cb)
+    if self.right:
+      self.right.depth_first_for_each(cb)
+
       
 
       
