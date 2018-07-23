@@ -1,5 +1,26 @@
 def heapsort(arr):
-  pass
+  counter = 0
+  empArr = []
+  heapObj = Heap()
+
+  # arr should be in self.storage
+  # heapObj.size is increased by 1 per element of arr
+  # divide by 2, round down to floor
+  for item in arr:
+    heapObj.insert(item)
+  #print(heapObj.storage)
+  
+  for j in range(len(arr)):
+  # heapObj.delete return a arr[i] with the highest value. This is retval
+  #print(res)
+    res = heapObj.delete()
+    empArr.append(res)
+    counter += 1
+    #print(empArr)
+  print(list(reversed(empArr)))
+  answer = list(reversed(empArr))
+  return answer
+  
 
 class Heap:
   def __init__(self):
