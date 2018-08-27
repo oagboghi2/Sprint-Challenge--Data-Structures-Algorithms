@@ -10,17 +10,17 @@ class BinarySearchTree:
     queue.append(self)
     while len(queue):
       current_node = queue.pop(0)
-      if current_node.right:
-        queue.append(current_node.right)
       if current_node.left:
         queue.append(current_node.left)
+      if current_node.right:
+        queue.append(current_node.right)
       cb(current_node.value)
 
   def depth_first_for_each(self, cb):
     arr = []
     arr.append(self)
     while len(arr):
-      current_node = arr.pop(0)
+      current_node = arr.pop()
       if current_node.right:
         arr.append(current_node.right)
       if current_node.left:
