@@ -5,7 +5,7 @@ A. O(n)
 B. O(logn) // becuase we diide by half in our loop, this is O(logn)
 C. O(n^3)
 D. O(logn) // we multiply by 2 in our loop, so its logn
-E. O(n^3) // We loops are O(n) but the last loop in O(1), so it isnt added to bigO
+E. O(n^3) // the first 3 loops are O(n) but the last loop in O(1), so it isnt added to bigO
 F. O(n)
 G. O(n)
 
